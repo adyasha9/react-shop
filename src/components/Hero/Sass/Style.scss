@@ -1,0 +1,26 @@
+@import './../../../styles/mixins.scss';
+$primary-color: #F6F8FA;
+$secondary-color:#0f5018;
+$primary-font: 'PT Sans',
+sans-serif;
+$secondary-font:'Roboto',
+sans-serif;
+.hero {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 15px;
+    @media (max-width: 767px) {
+        height: 60px;
+    }
+    h1 {
+        text-align: left;
+        @include font-size(19px, 19px, 500px, 1280px);
+        font-family: $primary-font;
+        letter-spacing: 0.5px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
